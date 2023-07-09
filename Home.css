@@ -1,0 +1,262 @@
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    background-color: wheat;
+}
+
+.logo
+{
+    margin-left: 20px;
+}
+.logo img{
+    object-fit: cover;
+    width: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 18px;
+    /* margin-right: px; */
+    /* margin-left: 40px; */
+    color: black;
+}
+
+.link
+{
+    width:40%;
+    display: flex;    
+    justify-content: space-between;
+}
+.social-icons :hover{
+    display: inline-block;
+    transform: scale(0.7,0.7);
+}
+
+.social-icons
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.banner img{
+    background-size: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.text
+{
+    background-color: wheat;
+    width:35%;
+    height: 350px;
+    position: absolute;
+    right: 180px;
+    top: 210px;
+}
+
+.t
+{
+    padding: 110px;
+    position: relative;
+    top: -80px;
+    left: -80px ;
+}
+
+.t1, .t2
+{
+    line-height: 1px;
+    color: rgb(196, 113, 4);
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: -180px;
+    left: 20px;
+}
+
+.t3
+{
+    position: relative;
+    top: -180px;
+    left: 20px
+}
+
+.btn
+{
+    background-color: rgb(196, 113, 4);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(196, 113, 4);
+    border-radius: 3px;
+    position: relative;
+    top: -170px;
+    left: 20px;
+}
+
+.bro{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.bro-text{
+    text-align: center;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.dinner, .living, .bedroom {
+    margin-right: 5px;
+} 
+ 
+.pic img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.p1 ,.p2 ,.p3 ,.product-text
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-text
+{
+    font-size: 25px;
+}
+
+.product-image
+{
+    padding: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.product-image img{
+    margin-right: 5px;
+}
+
+.head , .head1 , .head2 , .head3
+{
+    font-weight: bold;
+}
+
+.price , .price1 , .price2 , .price3
+{
+    font-size: 12px;
+} 
+
+.style1, .style2, .style3, .style
+{
+    color: rgb(206, 197, 185);
+}
+.lable1
+{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 270px;
+} 
+.img1{
+    border: 1px solid #F4F5F7;
+    background-color: #F4F5F7;
+    margin-right: 10px;
+}
+.card-content{
+    padding-left: 10px;
+   
+}
+.img1 img {
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1300px) 
+{
+    .text
+    {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 850px) 
+{
+    .nav{
+        padding-top: 25px;
+    }
+    .link , .social-icons{
+        flex-direction: column !important;
+        line-height: 50px;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .social-icons img
+    {
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    img :hover{
+        opacity: 1;
+        background-color: yellow;
+    };
+}
+
+@media screen and (max-width: 550px) 
+{
+    .banner img{
+        background-size: 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+    .pic, .product-image
+    {
+        flex-direction: column;
+        padding: unset;
+    }
+    #img1, #img2, #img3, #img4{
+        margin-top: 15px;
+
+    }
+     .lable1
+    {
+        position: absolute;
+        left: 210px;
+    }
+}
+ 
